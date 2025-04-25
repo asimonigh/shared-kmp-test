@@ -1,18 +1,19 @@
 // swift-tools-version:5.3
+
 import PackageDescription
 
 let package = Package(
-   name: "weatheralert",
+   name: "WeatherAlert",
    platforms: [
      .iOS(.v14),
    ],
    products: [
-      .library(name: "weatheralert", targets: ["weatheralert"])
+      .library(name: "WeatherAlert", targets: ["WeatherAlert"])
    ],
    targets: [
       .binaryTarget(
-         name: "weatheralert",
-         url: "https://github.com/asimonigh/shared-kmp-test/releases/download/0.1-test/weatheralert.xcframework.zip",
-         checksum:"130c096a090296791ea285c557257577187015c62b1c77f98879dea145d29c7a")
+         name: "WeatherAlert",
+         url: "https://github.com/asimonigh/shared-kmp-test/releases/download/0.1.1-test/weatheralert.xcframework.zip",
+         checksum:"e80144d230ca7068db87152b0c45ccffeab296512ffd89b7cd328e849c2937ea")
    ]
 )
